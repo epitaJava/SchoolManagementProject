@@ -1,0 +1,16 @@
+Student Id,Name,Department,Course,Age,Year,Fee,Paid
+1001,Tom,Bachelor's of Computer science,Java;Python;C++,20,2022,10000,Yes
+1002,Aaron,Bachelor's of Artificial Intelligence,Python;NLP;Statistics,21,2023,15000,No
+1003,Ryan,Bachelor's of Cyber Security,Cryptography;Cyber threats;Networks and Security,20,2022,12000,Yes
+1004,Alex,Bachelor's of Computer science,Java;Python;C++,19,2022,10000,Yes
+1005,Dorian,Bachelor's of Computer science,Java;Python;C++,20,2022,10000,Yes
+1006,Teena,Bachelor's of Cyber Security,Cryptography;Cyber threats;Networks and Security,19,2022,12000,Yes
+1007,James,Bachelor's of Artificial Intelligence,Python;NLP;Statistics,21,2022,15000,Yes
+1008,Cathy,Bachelor's of Computer science,Java;Python;C++,,2023,10000,No
+1009,Sherif,Bachelor's of Cyber Security,Cryptography;Cyber threats;Networks and Security,21,2023,12000,Yes
+1009,John,Bachelor's of Artificial Intelligence,Python;NLP;Statistics,20,2023,15000,Yes
+1011,Mathew,Bachelor's of Cyber Security,Cryptography;Cyber threats;Networks and Security,19,2022,12000,No
+1012,George,Bachelor's of Computer science,Java;Python;C++,20,2022,10000,Yes
+1013,Steve,Bachelor's of Computer science,Java;Python;C++,19,2022,10000,No
+1014,Chris,Bachelor's of Artificial Intelligence,Python;NLP;Statistics,20,2023,15000,Yes
+1015,Andriya,Bachelor's of Artificial Intelligence,Python;NLP;Statistics,19,2023,15000,Yes
