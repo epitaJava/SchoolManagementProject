@@ -1,12 +1,16 @@
 package datamodel;
 
-public class Instructors extends Students{
+import java.math.BigInteger;
+
+public class Instructors{
 	
 	private String instructorId;
 	private String name;
 	private String subject;
-	private int phoneNumber;
+	private BigInteger phoneNumber;
 	private String email;
+	private String target_year;
+	
 	public String getInstructorId() {
 		return instructorId;
 	}
@@ -25,10 +29,10 @@ public class Instructors extends Students{
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
-	public int getPhoneNumber() {
+	public BigInteger getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(BigInteger phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	public String getEmail() {
@@ -37,6 +41,16 @@ public class Instructors extends Students{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+	public String getTarget_year() {
+		return target_year;
+	}
+	public void setTarget_year(String target_year) {
+		this.target_year = target_year;
+	}
+	@Override
+	public String toString() {
+		return "Instructors [instructorId=" + instructorId + ", name=" + name + ", subject=" + subject
+				+ ", phoneNumber=" + phoneNumber + ", email=" + email + ", target_year=" + target_year + "]\n";
+	}	
 	
 }
