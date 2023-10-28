@@ -44,8 +44,8 @@ public class Launcher {
 		courses.add("C++");
 		student.setCourse(courses); // courses.forEach(c -> System.out.println(c));
 
-		PayService payService = new PayService();
-		payService.read();
+		StudentService service = new StudentService();
+		service.read();
 
 	}
 }
