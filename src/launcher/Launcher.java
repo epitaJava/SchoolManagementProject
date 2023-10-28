@@ -44,8 +44,11 @@ public class Launcher {
 		courses.add("C++");
 		student.setCourse(courses); // courses.forEach(c -> System.out.println(c));
 
-		StudentService service = new StudentService();
-		service.read();
+		StudentService studentService = new StudentService();
+		System.out.println(studentService.read());
+
+		InstructorService instructorService = new InstructorService();
+		System.out.println(instructorService.readCSV());
 
 	}
 }
