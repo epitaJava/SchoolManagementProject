@@ -11,7 +11,7 @@ import java.util.List;
 import datamodel.Payment;
 import datamodel.Students;
 
-public class PayService extends Payment {
+public class StudentService {
 
 	public List<Students> read() throws IOException {
 		String line = null;
