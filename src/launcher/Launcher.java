@@ -51,5 +51,11 @@ public class Launcher {
 		InstructorService instructorService = new InstructorService();
 		System.out.println(instructorService.readCSV());
 
+		InstructorDatabase idb = new InstructorDatabase();
+		idb.databaseConnectivity();
+		
+		StudentDatabase isb = new StudentDatabase();
+		isb.databaseConnectivity();
+
 	}
 }
