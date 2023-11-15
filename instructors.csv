@@ -1,0 +1,16 @@
+﻿instructor_Id,name,subject,phone_number,email,targeted_year
+101,Jazz,Java Application Devlopment,9083458312,jazz@epita.fr,Fall 2022
+102,Fedrick,Analytics ,9057433131,fedrick@epita.fr,Spring 2023
+103,Rose,Python,9083435314,rose@epita.fr,Fall 2022
+104,Mario,French,7045458315,mario@epita.fr,Fall 2023
+105,Thomas,Java Application Devlopment,8034865916,thomas@epita.fr,Spring 2022
+106,Katherine,C++,9083458317,katherine@epita.fr,Fall 2022
+107,Vanisa,Database Management,9083978318,vanisa@epita.fr,Fall 2023
+108,Martin,French,9039558319,martin@epita.fr,Spring 2022
+109,Lin,Database Management,8083458320,lin@epita.fr,Fall 2022
+110,Rafeeq,Python,7045658321,rafeeq@epita.fr,Spring 2022
+111,Ken,Analytics ,9485658322,ken@epita.fr,Spring 2023
+112,Ben,Web deveopment,9084758323,ben@epita.fr,Fall 2022
+113,Brian,Web deveopment,9083458376,brian@epita.fr,Spring 2023
+114,Gloria,C++,8346458325,gloria@epita.fr,Fall 2023
+115,Yazid,Web deveopment,9083458326,yazid@epita.fr,Fall 2023
