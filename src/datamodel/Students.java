@@ -77,10 +77,4 @@ public class Students {
 		this.paid = paid;
 	}
 
-	@Override
-	public String toString() {
-		return "Students [studId=" + studId + ", name=" + name + ", age=" + age + ", course=" + course + ", department="
-				+ department + ", year=" + year + ", fee=" + fee + ", paid=" + paid + "]" + "\n";
-	}
-
 }
