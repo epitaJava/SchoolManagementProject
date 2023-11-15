@@ -1,20 +1,23 @@
 package launcher;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import database.InstructorDatabase;
+import database.StudentDatabase;
 import datamodel.Admin;
 import datamodel.Course;
 import datamodel.Enrollment;
 import datamodel.Students;
-import service.StudentService;
 import service.InstructorService;
+import service.StudentService;
 
 public class Launcher {
-	public static void main(String[] args) throws ParseException, IOException {
+	public static void main(String[] args) throws ParseException, IOException, ClassNotFoundException, SQLException {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -43,19 +46,19 @@ public class Launcher {
 		courses.add("Java");
 		courses.add("python");
 		courses.add("C++");
-		student.setCourse(courses); // courses.forEach(c -> System.out.println(c));
+		student.setCourse(courses); //
+		courses.forEach(c -> System.out.println(c));
 
-		StudentService studentService = new StudentService();
-		System.out.println(studentService.read());
+		StudentService studService = new StudentService();
+		studService.read();
 
-		InstructorService instructorService = new InstructorService();
-		System.out.println(instructorService.readCSV());
+		InstructorService service = new InstructorService();
+		System.out.println(service.readCSV());
 
 		InstructorDatabase idb = new InstructorDatabase();
 		idb.databaseConnectivity();
-		
+
 		StudentDatabase isb = new StudentDatabase();
 		isb.databaseConnectivity();
-
 	}
 }
