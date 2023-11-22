@@ -21,13 +21,15 @@ public class InstructorDatabase {
 			System.out.println("Connected DB");
 
 			PreparedStatement prep_query, prep_read;
-			
+
 			InstructorService service = new InstructorService();
 			List<Instructors> instructorList = service.readCSV();
+			// prep_query = con.prepareStatement("create table instructor (instructor_id INT
+			// NOT NULL PRIMARY KEY, name varchar(50), subject varchar(50), phone_number
+			// varchar(11), email varchar(50), target_year varchar(50)");
+
 			for (Instructors ins : instructorList) {
-				/*prep_query = con.prepareStatement("create table instructor (instructor_id INT, name varchar(50),"
-						+ " subject varchar(50), phone_number varchar(11), email varchar(50), target_year varchar(50)"
-						+ "UNIQUE(instructor_id))");*/
+
 				prep_query = con.prepareStatement(
 						"insert into instructor (instructor_id, name, subject, phone_number, email, target_year)"
 								+ "values (?,?,?,?,?,?)");
@@ -41,7 +43,7 @@ public class InstructorDatabase {
 			}
 
 			prep_read = con.prepareStatement("select * from instructor where target_year = ? ");
-			prep_read.setString(1,"Fall 2022");
+			prep_read.setString(1, "Fall 2022");
 			ResultSet rs = prep_read.executeQuery();
 			while (rs.next()) {
 				System.out.println(rs.getString("instructor_id") + " " + rs.getString("name") + " "
